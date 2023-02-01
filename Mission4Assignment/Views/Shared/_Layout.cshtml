@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <link rel="icon" href="img/mountains.png">
+</head>
+<body>
+    <nav>
+        <a asp-controller="GradeCalculator" asp-action="GradeCalc">Grade Calculator</a>
+        <a asp-controller="GradeCalculator" asp-action="Index">Home</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+</body>
+</html>
